@@ -21,63 +21,63 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23a1a1a1' fill-opacity='0.59' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
-h1 {
+.Content__Main-header {
   font-size: 2.5rem;
 }
 
-h1, h2 {
+.Content__Main-header, .Content__Main-subhead {
   text-align: center;
 }
 
-a {
+.Navigation__logo, .Navigation__link {
   text-decoration: none;
 }
 
-a:hover {
+.Navigation__logo:hover, .Navigation__link:hover {
   text-decoration: underline;
 }
 
-header {
+.Navigation {
   background-color: var(--primary-color);
   padding: 48px 0;
   border-bottom: var(--secondary-color) 6px solid;
 }
 
-header a {
+.Navigation__link, .Navigation__logo {
   font-size: 1.5rem;
   color: var(--off-white);
 }
 
-main a {
+.Content__Link1, .Content__Link2, .Content__Link3 {
   color: var(--danger-color);
 }
 
-main > article, nav{
+.Content, .Navigation {
   max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
 }
 
-nav {
+.Navigation {
   display: flex;
 }
 
-nav > a:not(:first-of-type){
+.Navigation__logo:not(:first-of-type), .Navigation__link:not(:first-of-type){
   margin-left: 24px;
 }
 
-nav > a.logo {
+.Navigation__logo {
   margin-right: auto;
   text-transform: uppercase;
 }
 
-main > section, main > article {
+.Hero, .Content {
   margin-bottom: 96px;
   box-shadow: 4px 4px 10px var(--gray);
   background-color: var(--white);
 }
 
-main > section.hero {
+.Hero {
   height: 300px;
   background-image: url(https://picsum.photos/1920/1000);
   background-size: cover;
@@ -89,7 +89,7 @@ main > section.hero {
   text-align: center;
 }
 
-section.hero > .call-to-action {
+.Hero__Intro {
   font-size: 2rem;
   font-weight: 700;
   text-shadow: var(--white) 0px 0px 10px, var(--white) 0px 0px 20px, var(--gray) 2px 2px 2px;
@@ -97,7 +97,7 @@ section.hero > .call-to-action {
   margin: 0;
 }
 
-section.hero > button {
+.Hero__CTA {
   background-color: var(--secondary-color);
   border: none;
   padding: 12px 24px;
@@ -106,16 +106,16 @@ section.hero > button {
   cursor: pointer;
 }
 
-main article {
+.Content {
   padding: 48px 96px;
 }
 
-main p {
+.Content__P1, .Content__P2, .Content__P3 {
   line-height: 1.75;
   margin-bottom: 48px;;
 }
 
-main > article img {
+.Content__Image {
   float: left;
   width: 300px;
   height: auto;
@@ -123,7 +123,7 @@ main > article img {
   margin-bottom: 6px;
 }
 
-footer {
+.Footer {
   margin-top: auto;
   background-color: var(--gray);
   text-align: center;
